@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:text="@string/register_title"
         android:textColor="#673AB7"
-        android:textSize="20sp"
-        app:fontFamily="@font/aclonica"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/username"
         android:layout_width="303dp"
         android:layout_height="39dp"
         android:background="@drawable/edit_round"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/email"
         android:layout_width="303dp"
         android:layout_height="39dp"
         android:background="@drawable/edit_round"
@@ -63,11 +63,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/username"
         app:layout_constraintVertical_bias="0.060000002" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/password"
         android:layout_width="303dp"
         android:layout_height="39dp"
         android:background="@drawable/edit_round"
@@ -79,11 +79,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.076" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/confirmPassword"
         android:layout_width="303dp"
         android:layout_height="39dp"
         android:background="@drawable/edit_round"
@@ -95,11 +95,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.081" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/registerButton"
         android:layout_width="150dp"
         android:layout_height="39dp"
         android:background="@drawable/edit_round"
@@ -111,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
         app:layout_constraintVertical_bias="0.127" />
 
     <TextView
@@ -119,15 +119,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="#FFFFFF"
+        android:shadowColor="#4E4D4E"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="3"
         android:text="Already have an account? Login here"
-        android:textColor="#9C27B0"
-        android:textSize="16sp"
+        android:textColor="#2B2A2A"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton"
         app:layout_constraintVertical_bias="0.28" />
 </androidx.constraintlayout.widget.ConstraintLayout>
